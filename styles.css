@@ -1,0 +1,63 @@
+:root {
+    /* Ana renkler */
+    --primary-blue: #005B99;      /* Logo'daki koyu mavi */
+    --secondary-blue: #0077CC;    /* Vurgular için daha açık mavi */
+    --accent-blue: #E5F3FF;       /* Arka plan vurguları için çok açık mavi */
+    
+    /* Nötr renkler */
+    --white: #FFFFFF;             /* Logo'daki beyaz */
+    --light-gray: #F5F5F5;        /* Arka plan için */
+    --medium-gray: #666666;       /* İkincil metinler için */
+    --dark-gray: #333333;         /* Ana metinler için */
+}
+
+/* Temel stil tanımlamaları */
+body {
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+/* Ana başlıklar */
+h1, h2, h3 {
+    color: var(--primary-blue);
+}
+
+/* Butonlar */
+.primary-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+    background-color: var(--secondary-blue);
+}
+
+/* İkincil butonlar */
+.secondary-button {
+    background-color: var(--accent-blue);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+/* Kartlar ve bölümler */
+.card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-highlight {
+    background-color: var(--accent-blue);
+}
