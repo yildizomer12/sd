@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const products = [
   {
@@ -30,6 +31,16 @@ const products = [
       "Automated sorting",
     ],
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800",
+  },
+  {
+    title: "Wire Flattening Machine",
+    model: "WFM1000",
+    specs: [
+      "Advanced wire flattening technology",
+      "Precise and efficient wheel weight production",
+      "High-speed operation",
+    ],
+    image: "/wire-flattening-machine.png",
   },
 ];
 
