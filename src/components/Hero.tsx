@@ -11,8 +11,8 @@ export const Hero = () => {
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold rounded-full bg-accent/10 text-accent">
             Industry Leading Manufacturing Equipment
           </span>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Revolutionizing Wheel Weight Manufacturing
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+            Transform Your Wheel Weights Production
           </h1>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             Leading the wheel weights industry with cutting-edge rotary punch technology and integrated production solutions. Our complete manufacturing systems deliver unmatched efficiency, precision, and ROI.
