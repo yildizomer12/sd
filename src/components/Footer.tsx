@@ -1,28 +1,28 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-secondary/50 pt-16 pb-8">
+    <footer className="bg-secondary pt-16 pb-8">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Wheel Weight Tech</h3>
+            <h3 className="text-xl font-bold mb-4">YourBrand</h3>
             <p className="text-gray-600 mb-4">
-              Leading manufacturer of precision wheel weight production equipment and integrated manufacturing solutions.
+              Leading manufacturer of wheel weights production equipment with cutting-edge rotary punch technology.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-accent transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-600 hover:text-accent transition-colors">
-                <Instagram className="h-5 w-5" />
+                <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-600 hover:text-accent transition-colors">
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -32,24 +32,51 @@ export const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/products" className="text-gray-600 hover:text-accent transition-colors">
+                <a href="#products" className="text-gray-600 hover:text-accent transition-colors">
                   Products
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/technology" className="text-gray-600 hover:text-accent transition-colors">
+                <a href="#technology" className="text-gray-600 hover:text-accent transition-colors">
                   Technology
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/roi-calculator" className="text-gray-600 hover:text-accent transition-colors">
-                  ROI Calculator
-                </Link>
+                <a href="#contact" className="text-gray-600 hover:text-accent transition-colors">
+                  Contact Us
+                </a>
               </li>
               <li>
-                <Link to="/about" className="text-gray-600 hover:text-accent transition-colors">
-                  About Us
-                </Link>
+                <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                  Calculate ROI
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Products */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Our Products</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                  Wire Flattening Machine
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                  Chopping and Marking Machine
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                  Taping and Packaging Machine
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-accent transition-colors">
+                  Decoiler Machine
+                </a>
               </li>
             </ul>
           </div>
@@ -57,55 +84,41 @@ export const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <ul className="space-y-3">
-              <li className="flex items-center text-gray-600">
-                <Phone className="h-5 w-5 mr-2" />
-                <span>+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-center text-gray-600">
-                <Mail className="h-5 w-5 mr-2" />
-                <span>info@wheelweighttech.com</span>
-              </li>
-              <li className="flex items-center text-gray-600">
-                <MapPin className="h-5 w-5 mr-2" />
-                <span>123 Manufacturing Ave, Industrial District</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Newsletter</h3>
-            <p className="text-gray-600 mb-4">
-              Subscribe to our newsletter for industry updates and innovations.
-            </p>
-            <div className="flex flex-col space-y-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
-              />
-              <button className="btn btn-primary w-full">
-                Subscribe
-              </button>
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 text-accent mr-2" />
+                <p className="text-gray-600">+90 549 430 00 20</p>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 text-accent mr-2" />
+                <a href="mailto:info@yourbrand.com" className="text-gray-600 hover:text-accent transition-colors">
+                  info@yourbrand.com
+                </a>
+              </div>
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 text-accent mr-2 mt-1" />
+                <p className="text-gray-600">
+                  Your Company Address,<br />
+                  City, Country
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
-            <p>&copy; {currentYear} Wheel Weight Tech. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="hover:text-accent transition-colors">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600 text-sm mb-4 md:mb-0">
+              © {new Date().getFullYear()} YourBrand. All rights reserved.
+            </p>
+            <div className="flex space-x-6">
+              <a href="#" className="text-gray-600 hover:text-accent text-sm transition-colors">
                 Privacy Policy
-              </Link>
-              <Link to="/terms" className="hover:text-accent transition-colors">
+              </a>
+              <a href="#" className="text-gray-600 hover:text-accent text-sm transition-colors">
                 Terms of Service
-              </Link>
-              <Link to="/sitemap" className="hover:text-accent transition-colors">
-                Sitemap
-              </Link>
+              </a>
             </div>
           </div>
         </div>
