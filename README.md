@@ -2,7 +2,7 @@
 
 ## Project info
 
-**Repository**: https://github.com/yildizomer12/bare-bones-web.git
+**Repository**: https://github.com/yildizomer12/bare-bones-web.gitss
 
 ## How can I edit this code?
 
