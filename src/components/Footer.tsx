@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img src="/yilsa-logo.jpg" alt="YILSA Logo" className="h-8 w-auto mr-2" />
+              <img src="/images/yilsa-logo.png" alt="YILSA Logo" className="h-8 w-auto mr-2" />
               <h3 className="text-xl font-bold">YILSA</h3>
             </div>
             <p className="text-gray-600 mb-4">

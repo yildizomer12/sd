@@ -10,7 +10,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img src="/yilsa-logo.jpg" alt="YILSA Logo" className="h-8 w-auto mr-2" />
+              <img src="/images/yilsa-logo.png" alt="YILSA Logo" className="h-8 w-auto mr-2" />
               <span className="text-xl font-bold">YILSA</span>
             </a>
           </div>
