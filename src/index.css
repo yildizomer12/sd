@@ -7,10 +7,10 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 204 100% 35%;
-    --border: 204 30% 90%;
-    --input: 204 30% 90%;
-    --ring: 204 100% 35%;
+    --foreground: 0 0% 10%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 270 100% 70%;
     --radius: 0.75rem;
   }
 
