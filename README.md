@@ -2,7 +2,7 @@
 
 ## Project info
 
-**Repository**: https://github.com/yildizomer12/simple-starting-page.git
+**Repository**: https://github.com/yildizomer12/bare-bones-web.git
 
 ## How can I edit this code?
 
@@ -24,7 +24,7 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/yildizomer12/simple-starting-page.git
+git clone https://github.com/yildizomer12/bare-bones-web.git
 
 # Step 2: Navigate to the project directory.
 cd simple-starting-page
