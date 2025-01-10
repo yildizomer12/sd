@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/b2bb0630-7b15-4391-92cd-29d6224f6d51
+**Repository**: https://github.com/yildizomer12/simple-starting-page.git
 
 ## How can I edit this code?
 
@@ -24,10 +24,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/yildizomer12/simple-starting-page.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd simple-starting-page
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -62,7 +62,11 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/b2bb0630-7b15-4391-92cd-29d6224f6d51) and click on Share -> Publish.
+You can deploy this project using any static site hosting service like:
+- Vercel
+- Netlify
+- GitHub Pages
+- Cloudflare Pages
 
 ## I want to use a custom domain - is that possible?
 
