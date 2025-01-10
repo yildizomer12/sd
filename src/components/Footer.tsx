@@ -7,7 +7,10 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">YourBrand</h3>
+            <div className="flex items-center mb-4">
+              <img src="/yilsa-logo.jpg" alt="YILSA Logo" className="h-8 w-auto mr-2" />
+              <h3 className="text-xl font-bold">YILSA</h3>
+            </div>
             <p className="text-gray-600 mb-4">
               Leading manufacturer of wheel weights production equipment with cutting-edge rotary punch technology.
             </p>
@@ -110,7 +113,7 @@ export const Footer = () => {
         <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} YourBrand. All rights reserved.
+              {new Date().getFullYear()} YILSA. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-600 hover:text-accent text-sm transition-colors">
