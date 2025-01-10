@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="96" height="60" viewBox="0 0 96 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Star shape -->
+  <path d="M30 10L35.2786 20.7214L46 26L35.2786 31.2786L30 42L24.7214 31.2786L14 26L24.7214 20.7214L30 10Z" fill="#007BFF"/>
+  <!-- Horizontal lines -->
+  <path d="M52 23H82" stroke="#007BFF" stroke-width="2"/>
+  <path d="M52 29H82" stroke="#007BFF" stroke-width="2"/>
+</svg>
