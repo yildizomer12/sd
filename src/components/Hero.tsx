@@ -15,7 +15,7 @@ export const Hero = () => {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div className="relative w-full h-full">
           <iframe
-            className={`absolute w-[300%] h-[300%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-40' : 'opacity-0'}`}
+            className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${isVideoLoaded ? 'opacity-40' : 'opacity-0'}`}
             src="https://www.youtube.com/embed/CUrBRxySXI8?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=CUrBRxySXI8&playsinline=1&enablejsapi=1&origin=http://localhost:5173&widgetid=1&hd=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             onLoad={() => setIsVideoLoaded(true)}
