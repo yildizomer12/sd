@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { QuoteDialog } from "./QuoteDialog";
+
+interface NavbarProps {
+}
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showQuoteDialog, setShowQuoteDialog] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="container">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <span className="text-xl font-bold">YourBrand</span>
+          <div className="flex-shrink-0 flex items-center">
+            <img src="/yilsa-logo.svg" alt="YILSA Logo" className="h-8 w-auto mr-2" />
+            <span className="text-xl font-bold text-[#0065A1]">YILSA</span>
           </div>
           
           <div className="hidden md:block">
@@ -23,8 +29,11 @@ export const Navbar = () => {
               <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
                 Contact
               </a>
-              <button className="btn btn-primary">
-                Get Started
+              <button 
+                className="btn btn-primary"
+                onClick={() => setShowQuoteDialog(true)}
+              >
+                Get Quote
               </button>
             </div>
           </div>
@@ -61,12 +70,23 @@ export const Navbar = () => {
             >
               Contact
             </a>
-            <button className="w-full btn btn-primary mt-4">
-              Get Started
+            <button 
+              className="w-full btn btn-primary mt-4"
+              onClick={() => {
+                setShowQuoteDialog(true);
+                setIsOpen(false);
+              }}
+            >
+              Get Quote
             </button>
           </div>
         </div>
       )}
+
+      <QuoteDialog 
+        open={showQuoteDialog} 
+        onOpenChange={setShowQuoteDialog}
+      />
     </nav>
   );
 };

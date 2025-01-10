@@ -43,16 +43,16 @@ export const ProductionLine = () => {
           {machines.map((machine, index) => (
             <div
               key={index}
-              className="glass-card rounded-xl overflow-hidden transition-all duration-300 hover:translate-y-[-4px]"
+              className="glass-card rounded-xl overflow-hidden transition-all duration-300 hover:translate-y-[-4px] flex flex-col"
             >
               <img
                 src={machine.image}
                 alt={machine.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-4">{machine.title}</h3>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-6 flex-grow">
                   {machine.specs.map((spec, i) => (
                     <li key={i} className="text-gray-600 text-sm flex items-center">
                       <span className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
@@ -60,7 +60,7 @@ export const ProductionLine = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="btn btn-secondary w-full">
+                <button className="btn btn-secondary w-full mt-auto">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </button>

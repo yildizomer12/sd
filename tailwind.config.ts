@@ -25,23 +25,23 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#1A1A1A",
+          DEFAULT: "#0065A1", // Updated primary color
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#F5F5F7",
+          DEFAULT: "#E6F0F7", // Lighter shade of primary
           foreground: "#1A1A1A",
         },
         accent: {
-          DEFAULT: "#A259FF",
+          DEFAULT: "#004B78", // Darker shade of primary
           foreground: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#F0F0F0",
-          foreground: "#666666",
+          DEFAULT: "#F0F7FF",
+          foreground: "#4A5568",
         },
         card: {
-          DEFAULT: "rgba(255, 255, 255, 0.8)",
+          DEFAULT: "rgba(255, 255, 255, 0.9)",
           foreground: "#1A1A1A",
         },
       },

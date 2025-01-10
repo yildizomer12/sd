@@ -1,5 +1,8 @@
 import { ArrowRight } from "lucide-react";
 
+interface HeroProps {
+}
+
 export const Hero = () => {
   return (
     <section className="pt-32 pb-20 min-h-screen flex items-center bg-gradient-to-b from-secondary to-white">
@@ -16,7 +19,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="btn btn-primary w-full sm:w-auto">
-              Get Equipment Specifications
+              Get Equipment Specification
               <ArrowRight className="ml-2 h-4 w-4" />
             </button>
             <button className="btn btn-secondary w-full sm:w-auto">

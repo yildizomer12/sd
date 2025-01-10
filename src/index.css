@@ -6,11 +6,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 270 100% 70%;
+    --background: 210 100% 100%;
+    --foreground: 210 50% 10%;
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 210 80% 50%;
     --radius: 0.75rem;
   }
 
@@ -41,15 +41,15 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-primary/50;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90;
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 focus:ring-secondary/50;
   }
 
   .btn-accent {
-    @apply bg-accent text-accent-foreground hover:bg-accent/90;
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 focus:ring-accent/50;
   }
 }
 
